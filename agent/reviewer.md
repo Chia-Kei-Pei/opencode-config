@@ -1,7 +1,7 @@
 ---
 description: Read-only code reviewer for pre-PR review, architecture critique, security/performance audits. Never modifies code.
 mode: subagent
-model: openai/gpt-5.2-codex
+model: openrouter/openai/gpt-5.2-codex
 temperature: 0.2
 tools:
   bash: true

@@ -1,7 +1,7 @@
 ---
 description: Pattern migration agent - applies transformations across the codebase. Use for migrating A→B, renames, API updates, style changes.
 mode: subagent
-model: openai/gpt-5.2-codex
+model: openrouter/anthropic/claude-sonnet-5
 temperature: 0.1
 tools:
   bash: true
