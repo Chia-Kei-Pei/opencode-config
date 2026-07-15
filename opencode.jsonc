@@ -67,7 +67,8 @@
         "npx",
         "-y",
         "@modelcontextprotocol/server-filesystem",
-        "/home/kpei"
+        "/home/kpei/.config/opencode",
+        "/home/kpei/HTX"
       ]
     }
   },
