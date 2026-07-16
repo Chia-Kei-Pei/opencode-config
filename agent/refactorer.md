@@ -51,11 +51,9 @@ rg 'PATTERN' src/ --glob '*.ts' --glob '*.tsx' -c | awk -F: '{sum+=$2} END {prin
 For large migrations (>5 files), register with Agent Mail:
 
 ```
-ensure_project(human_key="ABSOLUTE_PATH_TO_REPO")
-register_agent(
-  project_key="ABSOLUTE_PATH_TO_REPO",
-  program="opencode",
-  model="claude-sonnet-4",
+swarmmail_init(
+  project_path="ABSOLUTE_PATH_TO_REPO",
+  agent_name="refactorer",
   task_description="Pattern migration: PATTERN_DESCRIPTION"
 )
 ```
@@ -63,9 +61,7 @@ register_agent(
 Reserve files before editing:
 
 ```
-file_reservation_paths(
-  project_key="ABSOLUTE_PATH_TO_REPO",
-  agent_name="YOUR_AGENT_NAME",
+swarmmail_reserve(
   paths=["file1.ts", "file2.ts", ...],
   ttl_seconds=3600,
   exclusive=true,
@@ -150,17 +146,16 @@ pnpm test 2>&1 | head -50 || true
 Release Agent Mail reservations:
 
 ```
-release_file_reservations(
-  project_key="ABSOLUTE_PATH_TO_REPO",
-  agent_name="YOUR_AGENT_NAME"
+swarmmail_release(
+  paths=["file1.ts", "file2.ts", ...]
 )
 ```
 
 Close beads:
 
 ```bash
-bd close BEAD_ID --reason "Migration complete: X files changed" --json
-bd sync
+hive_close(id="BEAD_ID", reason="Migration complete: X files changed")
+hive_sync()
 ```
 
 ## Output Format
