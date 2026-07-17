@@ -2,8 +2,8 @@
   "$schema": "https://opencode.ai/config.json",
   
   // === Models ===
-  "model": "openrouter/anthropic/claude-sonnet-5",
-  "small_model": "openrouter/anthropic/claude-haiku-4.5",  // title gen, lightweight tasks
+  "model": "openrouter/google/gemini-3.5-flash",
+  "small_model": "openrouter/deepseek/deepseek-v4-flash",  // title gen, lightweight tasks
   "autoupdate": true,
   
   // === Formatters ===
@@ -81,7 +81,7 @@
     },
     // Plan agent - read-only analysis, no file writes
     "plan": {
-      "model": "openrouter/anthropic/claude-sonnet-5",  // Sonnet 5 for planning
+      "model": "openrouter/google/gemini-3.5-flash",  // Sonnet 5 for planning
       "temperature": 0.1,
       "tools": {
         "write": false,
@@ -109,7 +109,7 @@
     },
     // Security agent - read-only vulnerability scanning with Snyk
     "security": {
-      "model": "openrouter/anthropic/claude-sonnet-5",
+      "model": "openrouter/google/gemini-3.5-flash",
       "temperature": 0.1,  // Low temp for deterministic security analysis
       "tools": {
         "write": false,
@@ -120,7 +120,7 @@
     },
     // Test writer agent - generates comprehensive test suites
     "test-writer": {
-      "model": "openrouter/anthropic/claude-sonnet-5",
+      "model": "openrouter/google/gemini-3.5-flash",
       "temperature": 0.2,  // Slight creativity for test case generation
       "permission": {
         "write": {
@@ -135,7 +135,7 @@
     },
     // Docs agent - documentation writer (cheaper model)
     "docs": {
-      "model": "openrouter/anthropic/claude-haiku-4.5",  // Haiku for cost-effective docs
+      "model": "openrouter/deepseek/deepseek-v4-flash",  // Haiku for cost-effective docs
       "temperature": 0.3,  // More creativity for readable documentation
       "permission": {
         "write": {

@@ -1,7 +1,7 @@
 ---
 description: Fast codebase exploration - read-only, no modifications. Optimized for quick searches and pattern discovery.
 mode: subagent
-model: openrouter/google/gemini-3.5-flash
+model: openrouter/deepseek/deepseek-v4-pro
 temperature: 0.1
 tools:
   bash: true

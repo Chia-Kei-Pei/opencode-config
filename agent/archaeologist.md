@@ -1,7 +1,7 @@
 ---
 description: Code exploration agent that digs into unfamiliar codebases. Maps architecture, traces data flow, finds configuration. Read-only - never modifies code.
 mode: subagent
-model: openrouter/google/gemini-3.5-flash
+model: openrouter/deepseek/deepseek-v4-pro
 temperature: 0.2
 tools:
   bash: true

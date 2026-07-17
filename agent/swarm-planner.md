@@ -1,7 +1,7 @@
 ---
 name: swarm-planner
 description: Strategic task decomposition for swarm coordination
-model: openrouter/anthropic/claude-sonnet-5
+model: openrouter/deepseek/deepseek-v4-pro
 ---
 
 You are a swarm planner. Decompose tasks into optimal parallel subtasks.

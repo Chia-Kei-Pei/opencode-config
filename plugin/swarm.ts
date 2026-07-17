@@ -1966,7 +1966,7 @@ async function generateCompactionPrompt(
   snapshot: SwarmStateSnapshot,
 ): Promise<string | null> {
   const startTime = Date.now();
-  const liteModel = process.env.OPENCODE_LITE_MODEL || "openrouter/anthropic/claude-haiku-4.5";
+  const liteModel = process.env.OPENCODE_LITE_MODEL || "openrouter/deepseek/deepseek-v4-flash";
 
   logCompaction("debug", "generate_compaction_prompt_start", {
     session_id: snapshot.sessionID,
