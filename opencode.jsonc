@@ -135,7 +135,7 @@
     },
     // Docs agent - documentation writer (cheaper model)
     "docs": {
-      "model": "openrouter/deepseek/deepseek-v4-flash",  // Haiku for cost-effective docs
+      "model": "openrouter/deepseek/deepseek-v4-flash",  // For cost-effective docs
       "temperature": 0.3,  // More creativity for readable documentation
       "permission": {
         "write": {
