@@ -1,7 +1,7 @@
 ---
 description: Pattern migration agent - applies transformations across the codebase. Use for migrating A→B, renames, API updates, style changes.
 mode: subagent
-model: openrouter/anthropic/claude-sonnet-5
+model: openrouter/deepseek/deepseek-v4-pro
 temperature: 0.1
 tools:
   bash: true
