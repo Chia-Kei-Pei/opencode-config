@@ -96,9 +96,9 @@ repo-crawl_file(repo="owner/repo", path="docs/...")
 **Store detailed findings for future agents:**
 
 ```
-semantic-memory_store(
+hivemind_store(
   information="Researched <library> v<version>. Key findings: <detailed notes with examples, gotchas, patterns>",
-  metadata="<library>, <version>, <topic>, research"
+  metadata="{\"library\": \"<library>\", \"version\": \"<version>\", \"topic\": \"<topic>\", \"type\": \"research\"}"
 )
 ```
 
