@@ -77,12 +77,12 @@
   "agent": {
     // Build agent - full capability with slight creativity
     "build": {
-      "model": "openrouter/deepseek/deepseek-v4-pro",
+      "model": "openrouter/moonshotai/kimi-k2.7-code",
       "temperature": 0.3
     },
     // Plan agent - read-only analysis, no file writes
     "plan": {
-      "model": "openrouter/google/gemini-3.5-flash",  // Sonnet 5 for planning
+      "model": "openrouter/moonshotai/kimi-k2.7-code",  // Sonnet 5 for planning
       "temperature": 0.1,
       "tools": {
         "write": false,
