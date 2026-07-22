@@ -305,6 +305,18 @@ function getSwarmSummary(projection: SwarmProjection): string {
 // =============================================================================
 
 const SWARM_CLI = "swarm";
+const SWARM_CLI_ENTRY =
+  process.env.SWARM_CLI_ENTRY ??
+  join(
+    homedir(),
+    "Projects",
+    "swarm-tools",
+    "packages",
+    "opencode-swarm-plugin",
+    "dist",
+    "bin",
+    "swarm.js",
+  );
 
 // =============================================================================
 // File-based Logging (writes to ~/.config/swarm-tools/logs/)
@@ -569,11 +581,25 @@ async function execTool(
 ): Promise<string> {
   return new Promise((resolve, reject) => {
     const hasArgs = Object.keys(args).length > 0;
-    const cliArgs = hasArgs
+    const toolArgs = hasArgs
       ? ["tool", name, "--json", JSON.stringify(args)]
       : ["tool", name];
 
-    const proc = spawn(SWARM_CLI, cliArgs, {
+    const useLocalCli = existsSync(SWARM_CLI_ENTRY);
+
+    const executable = useLocalCli
+      ? "bun"
+      : SWARM_CLI;
+
+    const cliArgs = useLocalCli
+      ? [SWARM_CLI_ENTRY, ...toolArgs]
+      : toolArgs;
+
+    // console.error(
+    //   `[swarm-wrapper] backend=${useLocalCli ? SWARM_CLI_ENTRY : SWARM_CLI}`,
+    // );
+
+    const proc = spawn(executable, cliArgs, {
       cwd: projectDirectory, // Run in project directory, not plugin directory
       stdio: ["ignore", "pipe", "pipe"],
       env: {
