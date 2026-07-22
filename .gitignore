@@ -15,3 +15,6 @@ bun.lock
 
 # OS
 .DS_Store
+
+# environment variables
+.env
