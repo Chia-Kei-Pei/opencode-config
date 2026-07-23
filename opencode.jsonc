@@ -67,9 +67,9 @@
         "npx",
         "-y",
         "@modelcontextprotocol/server-filesystem",
-        "/home/kpei/.config/opencode",
-        "/home/kpei/HTX",
-        "/home/kpei/swarm-tools"
+        "{env:HOME}/.config/opencode",
+        "{env:HOME}/swarm-tools",
+        "{env:WORKING_DIR}"
       ]
     }
   },
