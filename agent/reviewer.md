@@ -1,7 +1,7 @@
 ---
 description: Read-only code reviewer for pre-PR review, architecture critique, security/performance audits. Never modifies code.
 mode: subagent
-model: openrouter/deepseek/deepseek-v4-pro
+# model: openrouter/deepseek/deepseek-v4-pro
 temperature: 0.2
 tools:
   bash: true
