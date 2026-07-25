@@ -2,8 +2,8 @@
   "$schema": "https://opencode.ai/config.json",
   
   // === Models ===
-  "model": "opencode/deepseek-v4-flash-free",
-  "small_model": "opencode/deepseek-v4-flash-free",  // title gen, lightweight tasks
+  "model": "openrouter/moonshotai/kimi-k2.7-code",
+  "small_model": "openrouter/deepseek/deepseek-v4-flash",  // title gen, lightweight tasks
   "autoupdate": true,
   
   // === Formatters ===
