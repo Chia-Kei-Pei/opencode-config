@@ -78,12 +78,12 @@
   "agent": {
     // Build agent - full capability with slight creativity
     "build": {
-    //   "model": "openrouter/moonshotai/kimi-k2.7-code",
+      "model": "openrouter/moonshotai/kimi-k2.7-code",
       "temperature": 0.3
     },
     // Plan agent - read-only analysis, no file writes
     "plan": {
-    //   "model": "openrouter/moonshotai/kimi-k2.7-code",  // Sonnet 5 for planning
+      "model": "openrouter/moonshotai/kimi-k2.7-code",  // Sonnet 5 for planning
       "temperature": 0.1,
       "tools": {
         "write": false,
@@ -111,7 +111,7 @@
     },
     // Security agent - read-only vulnerability scanning with Snyk
     "security": {
-    //   "model": "openrouter/deepseek/deepseek-v4-pro",
+      "model": "openrouter/deepseek/deepseek-v4-pro",
       "temperature": 0.1,  // Low temp for deterministic security analysis
       "tools": {
         "write": false,
@@ -122,7 +122,7 @@
     },
     // Test writer agent - generates comprehensive test suites
     "test-writer": {
-    //   "model": "openrouter/deepseek/deepseek-v4-pro",
+      "model": "openrouter/deepseek/deepseek-v4-pro",
       "temperature": 0.2,  // Slight creativity for test case generation
       "permission": {
         "write": {
@@ -137,7 +137,7 @@
     },
     // Docs agent - documentation writer (cheaper model)
     "docs": {
-    //   "model": "openrouter/deepseek/deepseek-v4-flash",  // For cost-effective docs
+      "model": "openrouter/deepseek/deepseek-v4-flash",  // For cost-effective docs
       "temperature": 0.3,  // More creativity for readable documentation
       "permission": {
         "write": {
