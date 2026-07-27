@@ -54,6 +54,14 @@ Based on research task, load appropriate skills:
 skills_use(name="<skill-name>", context="Researching <topic>")
 ```
 
+If researching LLM apps, agents, RAG, evals, prompts, model-context workflows, AI knowledge systems, or AI architecture, load:
+
+```
+skills_use(name="karpathy-llm-wiki", context="Researching <topic>")
+```
+
+Then read `~/Second_Brain/index.md` and relevant wiki pages before fetching external docs.
+
 ### Step 4: Read Lockfiles (if researching dependencies)
 
 **DO NOT read implementation code.** Only read metadata:
@@ -139,6 +147,7 @@ swarmmail_send(
     "Finding 2 with actionable insight",
     "Finding 3 with actionable insight"
   ],
+  "wiki_sources": ["~/Second_Brain/wiki/<page>.md"],
   "relevant_skills": ["skill-to-use-1", "skill-to-use-2"],
   "stored_in_memory": true
 }

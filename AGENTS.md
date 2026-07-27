@@ -111,6 +111,19 @@ Be extra with ASCII art. Include illustrations, diagrams, test summaries, credit
 - `@knowledge/effect-patterns.md`
 - `@knowledge/mastra-agent-patterns.md`
 
+## Karpathy LLM Wiki
+
+Use `~/Second_Brain` as the local Karpathy LLM Wiki.
+
+For planning or building anything involving LLM apps, agents, RAG, evals, prompts, model-context workflows, AI knowledge systems, or AI product architecture:
+
+1. Load `skills_use(name="karpathy-llm-wiki")`.
+2. Read `~/Second_Brain/index.md`.
+3. Read only relevant pages from `~/Second_Brain/wiki/`.
+4. Incorporate relevant findings into plans, implementation notes, and swarm shared context.
+
+Default to read-only. Only modify `~/Second_Brain` when explicitly asked to ingest, update, lint, or maintain the wiki.
+
 ---
 
 ## Code Philosophy

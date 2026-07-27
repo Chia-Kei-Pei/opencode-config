@@ -18,6 +18,14 @@
   // === Instructions ===
   // AGENTS.md auto-loaded from ~/.config/opencode/ and repo root
   // Knowledge files (knowledge/*.md) are loaded on-demand via @path references
+
+  // === References ===
+  "references": {
+    "karpathy-llm-wiki": {
+      "path": "~/Second_Brain",
+      "description": "Karpathy LLM Wiki / AI second brain. Use when planning or building agent systems, LLM apps, RAG, evals, prompts, model-context workflows, knowledge systems, and AI product architecture. Start with index.md, then read relevant pages in wiki/."
+    }
+  },
   
   // === Permissions ===
   "permission": {
@@ -69,6 +77,7 @@
         "@modelcontextprotocol/server-filesystem",
         "{env:HOME}/.config/opencode",
         "{env:HOME}/swarm-tools",
+        "{env:HOME}/Second_Brain",
         "{env:WORKING_DIR}"
       ]
     }

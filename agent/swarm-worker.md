@@ -30,7 +30,7 @@ Your Task prompt contains detailed instructions including:
 
 1. **swarmmail_init()** - FIRST, before anything else
 2. **semantic-memory_find()** - Check past learnings
-3. **skills_list() / skills_use()** - Load relevant skills
+3. **skills_list() / skills_use()** - Load relevant skills, including `karpathy-llm-wiki` for LLM/agent/RAG/eval/prompt/model-context tasks
 4. **swarmmail_reserve()** - YOU reserve your files
 5. **Do the work** - Read, implement, verify
 6. **swarm_progress()** - Report at 25/50/75%
@@ -45,6 +45,18 @@ Your Task prompt contains detailed instructions including:
 - **Step 4 prevents conflicts** - workers reserve, not coordinator
 - **Step 6 prevents silent failure** - report progress
 - **Step 9 is the ONLY way to close** - releases reservations, records learning
+
+## Karpathy LLM Wiki
+
+If your assigned task touches LLM behavior, agents, RAG, evals, prompts, model context, AI knowledge systems, or AI product architecture:
+
+1. Load `skills_use(name="karpathy-llm-wiki", context="<your subtask>")`.
+2. Read `~/Second_Brain/index.md`.
+3. Read relevant pages from `~/Second_Brain/wiki/`.
+4. Apply the findings to your implementation.
+5. Mention relevant wiki files in progress and completion notes.
+
+Default to read-only. Do not modify `~/Second_Brain` unless explicitly assigned wiki maintenance work.
 
 ## When Blocked
 
