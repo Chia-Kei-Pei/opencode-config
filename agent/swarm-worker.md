@@ -51,12 +51,12 @@ Your Task prompt contains detailed instructions including:
 If your assigned task touches LLM behavior, agents, RAG, evals, prompts, model context, AI knowledge systems, or AI product architecture:
 
 1. Load `skills_use(name="karpathy-llm-wiki", context="<your subtask>")`.
-2. Read `~/Second_Brain/index.md`.
-3. Read relevant pages from `~/Second_Brain/wiki/`.
+2. Read `~/HTX/Karpathy_LLM_Wiki/index.md`.
+3. Read relevant pages from `~/HTX/Karpathy_LLM_Wiki/wiki/`.
 4. Apply the findings to your implementation.
 5. Mention relevant wiki files in progress and completion notes.
 
-Default to read-only. Do not modify `~/Second_Brain` unless explicitly assigned wiki maintenance work.
+Default to read-only. Do not modify `~/HTX/Karpathy_LLM_Wiki` unless explicitly assigned wiki maintenance work.
 
 ## When Blocked
 

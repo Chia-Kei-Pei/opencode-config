@@ -1,6 +1,6 @@
 ---
 name: karpathy-llm-wiki
-description: Use when planning or building LLM apps, agents, RAG, evals, prompts, model-context workflows, AI knowledge systems, or architecture that may benefit from the Karpathy LLM Wiki in ~/Second_Brain.
+description: Use when planning or building LLM apps, agents, RAG, evals, prompts, model-context workflows, AI knowledge systems, or architecture that may benefit from the Karpathy LLM Wiki in ~/HTX/Karpathy_LLM_Wiki.
 ---
 
 # Karpathy LLM Wiki
@@ -9,18 +9,18 @@ Use the local Karpathy LLM Wiki as prior art and planning context.
 
 ## Location
 
-- Vault: `~/Second_Brain`
-- Entry point: `~/Second_Brain/index.md`
-- Schema: `~/Second_Brain/AGENTS.md`
-- Pattern overview: `~/Second_Brain/karpathy-llm-wiki.md`
-- Wiki pages: `~/Second_Brain/wiki/`
+- Vault: `~/HTX/Karpathy_LLM_Wiki`
+- Entry point: `~/HTX/Karpathy_LLM_Wiki/index.md`
+- Schema: `~/HTX/Karpathy_LLM_Wiki/AGENTS.md`
+- Pattern overview: `~/HTX/Karpathy_LLM_Wiki/karpathy-llm-wiki.md`
+- Wiki pages: `~/HTX/Karpathy_LLM_Wiki/wiki/`
 
 ## Query Workflow
 
-1. Read `~/Second_Brain/index.md` first.
+1. Read `~/HTX/Karpathy_LLM_Wiki/index.md` first.
 2. Identify relevant pages from the index.
-3. Read only relevant pages under `~/Second_Brain/wiki/`.
-4. If the task concerns the wiki pattern itself, also read `~/Second_Brain/karpathy-llm-wiki.md`.
+3. Read only relevant pages under `~/HTX/Karpathy_LLM_Wiki/wiki/`.
+4. If the task concerns the wiki pattern itself, also read `~/HTX/Karpathy_LLM_Wiki/karpathy-llm-wiki.md`.
 5. Use findings as planning or implementation context, not as unquestioned truth.
 6. Cite wiki files in plans, implementation notes, and swarm shared context.
 
@@ -28,9 +28,9 @@ Use the local Karpathy LLM Wiki as prior art and planning context.
 
 Default to read-only.
 
-Only modify `~/Second_Brain` when the user explicitly asks to ingest, update, lint, or maintain the wiki.
+Only modify `~/HTX/Karpathy_LLM_Wiki` when the user explicitly asks to ingest, update, lint, or maintain the wiki.
 
-Never edit files in `~/Second_Brain/raw/processed/`.
+Never edit files in `~/HTX/Karpathy_LLM_Wiki/raw/processed/`.
 Only move files from `raw/unprocessed/` to `raw/processed/` during an explicit ingest workflow.
 
 ## Swarm Usage

@@ -60,7 +60,7 @@ If researching LLM apps, agents, RAG, evals, prompts, model-context workflows, A
 skills_use(name="karpathy-llm-wiki", context="Researching <topic>")
 ```
 
-Then read `~/Second_Brain/index.md` and relevant wiki pages before fetching external docs.
+Then read `~/HTX/Karpathy_LLM_Wiki/index.md` and relevant wiki pages before fetching external docs.
 
 ### Step 4: Read Lockfiles (if researching dependencies)
 
@@ -147,7 +147,7 @@ swarmmail_send(
     "Finding 2 with actionable insight",
     "Finding 3 with actionable insight"
   ],
-  "wiki_sources": ["~/Second_Brain/wiki/<page>.md"],
+  "wiki_sources": ["~/HTX/Karpathy_LLM_Wiki/wiki/<page>.md"],
   "relevant_skills": ["skill-to-use-1", "skill-to-use-2"],
   "stored_in_memory": true
 }

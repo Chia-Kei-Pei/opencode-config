@@ -21,8 +21,8 @@ skills_list()                                            # Available skills
 # If task involves LLMs, agents, RAG, evals, prompts, model context, AI knowledge systems,
 # or AI product architecture:
 skills_use(name="karpathy-llm-wiki", context="<task description>")
-read("~/Second_Brain/index.md")
-read("<relevant pages from ~/Second_Brain/wiki/>")
+read("~/HTX/Karpathy_LLM_Wiki/index.md")
+read("<relevant pages from ~/HTX/Karpathy_LLM_Wiki/wiki/>")
 ```
 
 Synthesize findings - note relevant patterns, past approaches, relevant wiki pages, and skills to recommend.
