@@ -20,9 +20,9 @@ skills_list()                                            # Available skills
 
 # If task involves LLMs, agents, RAG, evals, prompts, model context, AI knowledge systems,
 # or AI product architecture:
-skills_use(name="karpathy-llm-wiki", context="<task description>")
-read("~/HTX/Karpathy_LLM_Wiki/index.md")
-read("<relevant pages from ~/HTX/Karpathy_LLM_Wiki/wiki/>")
+read("~/HTX/OKF_LLM_Wiki/AGENTS.md")
+read("~/HTX/OKF_LLM_Wiki/bundles/research/index.md")
+read("<relevant concepts from the relevant ~/HTX/OKF_LLM_Wiki/bundles/<bundle>/>")
 ```
 
 Synthesize findings - note relevant patterns, past approaches, relevant wiki pages, and skills to recommend.
@@ -60,4 +60,4 @@ Return ONLY valid JSON - no markdown, no explanation:
 - No file overlap between subtasks
 - Include tests with the code they test
 - Order by dependency (if B needs A, A comes first)
-- Pass synthesized knowledge, including relevant Karpathy LLM Wiki findings and file paths, to workers via subtask descriptions
+- Pass synthesized knowledge, including relevant OKF LLM Wiki findings and file paths, to workers via subtask descriptions

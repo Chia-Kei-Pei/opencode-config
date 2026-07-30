@@ -54,13 +54,15 @@ Based on research task, load appropriate skills:
 skills_use(name="<skill-name>", context="Researching <topic>")
 ```
 
-If researching LLM apps, agents, RAG, evals, prompts, model-context workflows, AI knowledge systems, or AI architecture, load:
+If researching LLM apps, agents, RAG, evals, prompts, model-context workflows, AI knowledge systems, or AI architecture:
 
 ```
-skills_use(name="karpathy-llm-wiki", context="Researching <topic>")
+read("~/HTX/OKF_LLM_Wiki/AGENTS.md")
+read("~/HTX/OKF_LLM_Wiki/bundles/research/index.md")
+read("<relevant concepts from the relevant ~/HTX/OKF_LLM_Wiki/bundles/<bundle>/>")
 ```
 
-Then read `~/HTX/Karpathy_LLM_Wiki/index.md` and relevant wiki pages before fetching external docs.
+Do this before fetching external docs.
 
 ### Step 4: Read Lockfiles (if researching dependencies)
 
@@ -147,7 +149,7 @@ swarmmail_send(
     "Finding 2 with actionable insight",
     "Finding 3 with actionable insight"
   ],
-  "wiki_sources": ["~/HTX/Karpathy_LLM_Wiki/wiki/<page>.md"],
+  "okf_sources": ["~/HTX/OKF_LLM_Wiki/bundles/research/<concept>.md"],
   "relevant_skills": ["skill-to-use-1", "skill-to-use-2"],
   "stored_in_memory": true
 }

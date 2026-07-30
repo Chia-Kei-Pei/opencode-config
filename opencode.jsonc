@@ -21,9 +21,9 @@
 
   // === References ===
   "references": {
-    "karpathy-llm-wiki": {
-      "path": "~/HTX/Karpathy_LLM_Wiki",
-      "description": "Karpathy LLM Wiki. Use when planning or building agent systems, LLM apps, RAG, evals, prompts, model-context workflows, knowledge systems, and AI product architecture. Start with index.md, then read relevant pages in wiki/."
+    "okf-llm-wiki": {
+      "path": "~/HTX/OKF_LLM_Wiki",
+      "description": "OKF LLM Wiki. Use when planning or building agent systems, LLM apps, RAG, evals, prompts, model-context workflows, knowledge systems, and AI product architecture. Read AGENTS.md, then the relevant bundle index and concepts."
     }
   },
   
@@ -77,7 +77,7 @@
         "@modelcontextprotocol/server-filesystem",
         "{env:HOME}/.config/opencode",
         "{env:HOME}/swarm-tools",
-        "{env:HOME}/HTX/Karpathy_LLM_Wiki",
+        "{env:HOME}/HTX/OKF_LLM_Wiki",
         "{env:WORKING_DIR}"
       ]
     }

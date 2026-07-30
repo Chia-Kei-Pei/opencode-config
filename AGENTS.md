@@ -111,18 +111,16 @@ Be extra with ASCII art. Include illustrations, diagrams, test summaries, credit
 - `@knowledge/effect-patterns.md`
 - `@knowledge/mastra-agent-patterns.md`
 
-## Karpathy LLM Wiki
+## OKF LLM Wiki
 
-Use `~/HTX/Karpathy_LLM_Wiki` as the local Karpathy LLM Wiki.
+Use `~/HTX/OKF_LLM_Wiki` as the local OKF LLM Wiki.
 
 For planning or building anything involving LLM apps, agents, RAG, evals, prompts, model-context workflows, AI knowledge systems, or AI product architecture:
 
-1. Load `skills_use(name="karpathy-llm-wiki")`.
-2. Read `~/HTX/Karpathy_LLM_Wiki/index.md`.
-3. Read only relevant pages from `~/HTX/Karpathy_LLM_Wiki/wiki/`.
-4. Incorporate relevant findings into plans, implementation notes, and swarm shared context.
-
-Default to read-only. Only modify `~/HTX/Karpathy_LLM_Wiki` when explicitly asked to ingest, update, lint, or maintain the wiki.
+1. Read `~/HTX/OKF_LLM_Wiki/AGENTS.md`.
+2. Read the relevant bundle index, defaulting to `~/HTX/OKF_LLM_Wiki/bundles/research/index.md`.
+3. Read relevant concepts from that bundle.
+4. Use relevant findings in plans, implementation notes, and swarm shared context.
 
 ---
 
