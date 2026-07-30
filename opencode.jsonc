@@ -157,5 +157,8 @@
       },
       "description": "Documentation writer - generates and updates markdown docs, READMEs, and guides. Can only write to .md/.mdx files."
     }
-  }
+  },
+  "plugin": [
+    "opencode-parser"
+  ]
 }
